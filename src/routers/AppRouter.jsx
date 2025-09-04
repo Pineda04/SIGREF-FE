@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router"
-import { Login } from "../pages/auth"
+import { AppAuthRouter } from "../pages/auth/routers"
 
 export const AppRouter = () => {
   return (
     <Routes>
         <Route>
-            <Route path="/" element={<Login/>}/>
+            <Route path="/*" element={<AppAuthRouter/>}/>
         </Route>
     </Routes>
   )
